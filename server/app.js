@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 const app = express(); 
 
-
 mongoose.connect('');
 mongoose.connection.once('open', () => {
     console.log('connected to database');
