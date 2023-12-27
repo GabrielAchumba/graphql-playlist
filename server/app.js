@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 
 const app = express(); 
 
-mongoose.connect('');
+mongoose.connect('mongodb+srv://gabriel:gab*012021@cluster0.50dcf.mongodb.net/newpay-db?retryWrites=true&w=majority');
+//mongoose.connect('');
 mongoose.connection.once('open', () => {
     console.log('connected to database');
 })
